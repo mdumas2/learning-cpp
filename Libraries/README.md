@@ -118,8 +118,20 @@ This is not a text about using a package managers but actually it is about how t
 | Extension | Description                                                                                     |
 |-----------|-------------------------------------------------------------------------------------------------|
 | `.lib`    | A static library file on Windows; it contains compiled code that can be linked into applications. |
+| `.a`      | A static library file on Unix-like systems; it contains compiled code that can be linked into applications, similar to `.lib` files on Windows. |
 | `.dll`    | A dynamic link library on Windows; it contains code that can be loaded and executed by applications at runtime. |
+| `.so`     | A .so file is a shared object file in Unix-like operating systems (such as Linux). It contains code that can be shared and used by multiple programs, similar to dynamic-link libraries `.dll` in Windows. Shared object files are used to implement dynamic libraries, which are loaded into memory at runtime rather than at compile time. |
 | `.o`      | An object file produced by compiling a source file; it contains machine code that can be linked into executables or libraries. |
 | `.pdb`    | A program database file used by Windows for storing debugging information about a program; it helps in debugging the executable. |
 | `.hpp`    | A C++ header file; it typically contains declarations of functions, classes, and variables that can be included in multiple source files. |
-| `.a`      | A static library file on Unix-like systems; it contains compiled code that can be linked into applications, similar to `.lib` files on Windows. |
+
+# How to use Static Libraries
+
+# How to use Dynamic Libraries
+
+Property Pages (Debug, Release)
+Macros: $(Configuration), 
+VC++ Directories    ->  Include Directories
+VC++ Directories    ->  Library Directories
+C/C++   -> General  ->  Additional include directories->Include Path
+Linker  -> Input    ->  Additional Dependencies
