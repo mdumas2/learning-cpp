@@ -27,7 +27,6 @@ C:.
                 ├── adder.cpp           # Implementation of the library functions
                 ├── adder.hpp           # Header file for the library
                 └── build               # Build directory for compiled files
-            
 ```
 
 ## Build and Install Steps

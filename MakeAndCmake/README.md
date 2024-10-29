@@ -6,47 +6,41 @@ CMake is a tool that generates build files, such as Makefiles, for different pla
 
 CMake uses a file called CMakeLists.txt to define the project structure, dependencies, and build instructions. Based on this file, CMake generates platform-specific build files, such as:
 
-Makefiles (for Unix-like systems such as Linux and macOS)
-Visual Studio project files (for Windows)
-Xcode project files (for macOS)
+- Makefiles (for Unix-like systems such as Linux and macOS)
+- Visual Studio project files (for Windows)
+- Xcode project files (for macOS)
 
-main.cpp:
-    #include <iostream>
-    int main ()
-    {
-        std::cout << "Hello" << std::endl;
-        return 0;
-    }
+## Example:
 
-make
-makefile:
-    default:
-        g++ main.cpp -o out
+**main.cpp**:
+```c
+#include <iostream>
+int main ()
+{
+    std::cout << "Hello" << std::endl;
+    return 0;
+}
+```
 
-mkdir out/build
-cmake -S . -B out/build/
-CMakeLists.txt:
-    cmake_minimum_required(VERSION 3.10.2)
-    
-    project(Hello)
+**makefile**:
+```makefile
+default:
+    g++ main.cpp -o out
+```
 
-    add_executable(${PROJECT_NAME} main.cpp)
+**CMakeLists.txt**:
+```cmake
+cmake_minimum_required(VERSION 3.27.4)
 
-# Libraries
-install makes the .exe accesible by the whole system so i dont need to do cd into the release directorie
+project(Hello)
 
-sudo make install
-CMakeLists.txt:
-    cmake_minimum_required(VERSION 2.8)
-    project(Hello)
-    add_executable(${PROJECT_NAME} main.cpp)
-    install(TARGETS ${PROJECT_NAME} DESTINATION bin)
+add_executable(${PROJECT_NAME} main.cpp)
+```
 
-## Build static libraries
+## Build Static Libraries
 
+For detailed instructions on building static libraries, please refer to the [Build Static Libraries Documentation](./StaticLibrariesExample/README.md).
 
-## build dynamic libraries
-
-#### How to use them?
+## Build Dynamic Libraries
 
 # GIT Submodules with CMAKE
