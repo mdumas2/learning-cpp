@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.27.4)
 project(mylib)
 add_library(mylib adder.cpp)
-set_target_properties(mylib PROPERTIES PUBLIC_HEADER adder.h)
+set_target_properties(mylib PROPERTIES PUBLIC_HEADER adder.hpp)
 install(TARGETS mylib LIBRARY DESTINATION lib PUBLIC_HEADER DESTINATION include)
