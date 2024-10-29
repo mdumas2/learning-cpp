@@ -125,13 +125,11 @@ This is not a text about using a package managers but actually it is about how t
 | `.pdb`    | A program database file used by Windows for storing debugging information about a program; it helps in debugging the executable. |
 | `.hpp`    | A C++ header file; it typically contains declarations of functions, classes, and variables that can be included in multiple source files. |
 
-# How to use Static Libraries
-
-# How to use Dynamic Libraries
-
+<!--
 Property Pages (Debug, Release)
 Macros: $(Configuration), 
 VC++ Directories    ->  Include Directories
 VC++ Directories    ->  Library Directories
 C/C++   -> General  ->  Additional include directories->Include Path
 Linker  -> Input    ->  Additional Dependencies
+-->
