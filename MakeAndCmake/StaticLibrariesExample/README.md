@@ -2,11 +2,6 @@
 
 This repository demonstrates how to create and use a static library in C++ using CMake.
 
-## Prerequisites
-
-- **CMake**: Ensure that CMake is installed on your system. You can download it from [CMake's official website](https://cmake.org/download/).
-- **MinGW**: Make sure you have MinGW installed for building your project on Windows.
-
 ## Directory Structure
 
 ```

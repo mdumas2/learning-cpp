@@ -1,11 +1,6 @@
 # My Dynamic Library Example
 
-This repository demonstrates how to create and use a static library in C++ using CMake.
-
-## Prerequisites
-
-- **CMake**: Ensure that CMake is installed on your system. You can download it from [CMake's official website](https://cmake.org/download/).
-- **MinGW**: Make sure you have MinGW installed for building your project on Windows.
+This repository demonstrates how to create and use a dynamic library in C++ using CMake.
 
 ## Directory Structure
 
@@ -18,7 +13,7 @@ C:.
     │   └── lib
     │       └── mylib.lib               # Compiled library
     └── MakeAndCmake
-        └── StaticLibrariesExample
+        └── DynamicLibrariesExample
             ├── CMakeLists.txt          # CMake configuration for the test project
             ├── main.cpp                # Main program file
             ├── build                   # Build directory for compiled files
@@ -33,7 +28,7 @@ C:.
 
 1. **Navigate to the Library Build Directory**:
    ```bash
-   cd C:/LearningCpp/MakeAndCmake/StaticLibrariesExample/Adder/build
+   cd C:/LearningCpp/MakeAndCmake/DynamicLibrariesExample/Adder/build
    ```
 2. **Configure, Build, and Install the Library: You can configure the CMake installation, build the library, and install it all in one step**:
     ```bash
@@ -42,7 +37,7 @@ C:.
 ## Build the Test Project
 1. **Navigate to the Test Project Build Directory**:
    ```bash
-    cd C:/LearningCpp/MakeAndCmake/StaticLibrariesExample/build
+    cd C:/LearningCpp/MakeAndCmake/DynamicLibrariesExample/build
     ```
 2. **Configure CMake for the Test Project and Build the Test Project: Set up the project to find the installed library, compile the test project**:
     ```bash
@@ -50,6 +45,6 @@ C:.
     ```
 4. **Run the Executable: Navigate to the Release directory and run the test executable**:
     ```bash
-    cd C:/LearningCpp/MakeAndCmake/StaticLibrariesExample/build/Release
-    .\teststaticlib.exe
+    cd C:/LearningCpp/MakeAndCmake/DynamicLibrariesExample/build/Release
+    .\testdynamiclib.exe
     

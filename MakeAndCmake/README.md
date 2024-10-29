@@ -10,6 +10,11 @@ CMake uses a file called CMakeLists.txt to define the project structure, depende
 - Visual Studio project files (for Windows)
 - Xcode project files (for macOS)
 
+## Prerequisites
+
+- **CMake**: Ensure that CMake is installed on your system. You can download it from [CMake's official website](https://cmake.org/download/).
+- **MinGW**: Make sure you have MinGW installed for building your project on Windows.
+
 ## Example:
 
 **main.cpp**:
