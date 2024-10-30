@@ -42,11 +42,11 @@ project(Hello)
 add_executable(${PROJECT_NAME} main.cpp)
 ```
 
-## Build Static Libraries
+## Build And Link Static Libraries
 
 For detailed instructions on building static libraries, please refer to the [Build Static Libraries Documentation](./StaticLibrariesExample/README.md).
 
-## Build Dynamic Libraries
+## Build And Link Dynamic Libraries
 
 For detailed instructions on building dynamic libraries, please refer to the [Build Dynamic Libraries Documentation](./DynamicLibrariesExample/README.md).
 
