@@ -1,7 +1,9 @@
 #pragma once
 
+#define MYLIB_API __declspec(dllexport)
+
 namespace mylib
 {
-    int add(int a, int b);
-    float add(float a, float b);
+    MYLIB_API  int add(int a, int b);
+    MYLIB_API  float add(float a, float b);
 }

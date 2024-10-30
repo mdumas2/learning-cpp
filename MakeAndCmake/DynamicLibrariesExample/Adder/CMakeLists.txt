@@ -11,6 +11,9 @@ add_library(mylib SHARED adder.cpp)
 # Specify that 'adder.hpp' should be treated as a public header
 set_target_properties(mylib PROPERTIES PUBLIC_HEADER adder.hpp)
 
+# Ensure all symbols are exported on Windows
+set(CMAKE_WINDOWS_EXPORT_ALL_SYMBOLS ON)
+
 # Install the target 'mylib'
 # - LIBRARY: Install the compiled library to the specified destination
 # - PUBLIC_HEADER: Install the public header file to the specified destination
