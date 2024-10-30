@@ -15,32 +15,9 @@ CMake uses a file called CMakeLists.txt to define the project structure, depende
 - **CMake**: Ensure that CMake is installed on your system. You can download it from [CMake's official website](https://cmake.org/download/).
 - **MinGW**: Make sure you have MinGW installed for building your project on Windows.
 
-## Example:
+## Example Hello Cmake:
 
-**main.cpp**:
-```c
-#include <iostream>
-int main ()
-{
-    std::cout << "Hello" << std::endl;
-    return 0;
-}
-```
-
-**makefile**:
-```makefile
-default:
-    g++ main.cpp -o out
-```
-
-**CMakeLists.txt**:
-```cmake
-cmake_minimum_required(VERSION 3.27.4)
-
-project(Hello)
-
-add_executable(${PROJECT_NAME} main.cpp)
-```
+For detailed instructions on building with Make and Cmake, please refer to the [Hello Cmake Example Documentation](./HelloCmakeExample/README.md).
 
 ## Build And Link Static Libraries
 
@@ -51,3 +28,5 @@ For detailed instructions on building static libraries, please refer to the [Bui
 For detailed instructions on building dynamic libraries, please refer to the [Build Dynamic Libraries Documentation](./DynamicLibrariesExample/README.md).
 
 # GIT Submodules with CMake
+
+For detailed instructions on using GIT Submodules, please refer to the [Git Submodules Documentation](./GitSubModuleExample/README.md).
