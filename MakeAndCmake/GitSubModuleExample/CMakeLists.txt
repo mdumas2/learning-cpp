@@ -2,10 +2,9 @@ cmake_minimum_required(VERSION 3.27.4)
 
 project(testsub)
 
-add_executable(${PROJECT_NAME} main.capp)
+add_executable(${PROJECT_NAME} main.cpp)
 
 # DOWNLOAD ALL THE SUBMODULES
-find_package(GLEW REQUIRED)
 ## get glfw from github
 find_package(Git QUIET)
 if(GIT_FOUND AND EXISTS "${PROJECT_SOURCE_DIR}/.git")
@@ -27,7 +26,7 @@ if(NOT EXISTS "${PROJECT_SOURCE_DIR}/external/glfw/CMakeLists.txt")
     message(FATAL_ERROR "The glfw submodules was not downloaded! GIT_SUBMODULE was turned off or failed. Please update submodules and try again.")
 endif()
 
-add_subdirectory(extern/glfw)
+add_subdirectory(external/glfw)
 
 target_include_directories(${PROJECT_NAME}  
     PUBLIC external/glfw/include

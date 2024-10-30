@@ -84,11 +84,9 @@ But different from other languages like JavaScript and Python, utilizing C++ lib
 
 However, one of the most well-known package managers for C++ is [vcpkg](https://vcpkg.io/en/), maintained by Microsoft. vcpkg simplifies the process of managing C++ libraries and dependencies, making it easier for developers to integrate and utilize various packages in their projects.
 
-This is not a text about using a package managers but actually it is about how to take advantage of the whole universe of c++ Libraries.
-
 # Static vs. Dynamic Libraries
 
-**Static Libraries** (or Header-Only Libraries) are built within your project and fully included in your executable. In contrast, **Dynamic Libraries** are pre-built and need to be linked with your project at runtime.
+**Static Libraries** are built within your project and fully included in your executable. In contrast, **Dynamic Libraries** are pre-built and need to be linked with your project at runtime.
 
 ## Advantages and Disadvantages
 
@@ -124,12 +122,3 @@ This is not a text about using a package managers but actually it is about how t
 | `.o`      | An object file produced by compiling a source file; it contains machine code that can be linked into executables or libraries. |
 | `.pdb`    | A program database file used by Windows for storing debugging information about a program; it helps in debugging the executable. |
 | `.hpp`    | A C++ header file; it typically contains declarations of functions, classes, and variables that can be included in multiple source files. |
-
-<!--
-Property Pages (Debug, Release)
-Macros: $(Configuration), 
-VC++ Directories    ->  Include Directories
-VC++ Directories    ->  Library Directories
-C/C++   -> General  ->  Additional include directories->Include Path
-Linker  -> Input    ->  Additional Dependencies
--->

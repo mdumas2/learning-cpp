@@ -1,0 +1,3 @@
+[submodule "MakeAndCmake/GitSubModuleExample/external/glfw"]
+	path = MakeAndCmake/GitSubModuleExample/external/glfw
+	url = https://github.com/glfw/glfw.git
