@@ -1,4 +1,7 @@
+# Specify the minimum required version of CMake
 cmake_minimum_required(VERSION 3.27.4)
+
+# Define the project name
 project(teststaticlib)
 
 # Set the installation prefix to a relative path
