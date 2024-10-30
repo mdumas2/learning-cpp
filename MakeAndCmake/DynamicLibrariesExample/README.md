@@ -10,8 +10,10 @@ C:.
     ├── install
     │   ├── include
     │   │   └── adder.hpp               # Header file for the library
+    │   ├── bin
+    │   │   └── mylib.dll               # Dynamic/shared library (.dll), which is the Windows dynamic library that is needed at runtime.
     │   └── lib
-    │       └── mylib.lib               # Compiled library
+    │       └── mylib.lib               # Import library (.lib), which is used for linking with the executable during compilation.
     └── MakeAndCmake
         └── DynamicLibrariesExample
             ├── CMakeLists.txt          # CMake configuration for the test project
