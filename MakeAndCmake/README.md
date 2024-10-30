@@ -50,4 +50,4 @@ For detailed instructions on building static libraries, please refer to the [Bui
 
 For detailed instructions on building dynamic libraries, please refer to the [Build Dynamic Libraries Documentation](./DynamicLibrariesExample/README.md).
 
-# GIT Submodules with CMAKE
+# GIT Submodules with CMake
