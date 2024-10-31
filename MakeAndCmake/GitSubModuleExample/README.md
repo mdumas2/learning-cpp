@@ -38,6 +38,6 @@ C:.
     ```
 4. **Run the Executable: Navigate to the Release directory and run the test executable**:
     ```bash
-    cd C:/LearningCpp/MakeAndCmake/DynamicLibrariesExample/build/Release
-    .\testdynamiclib.exe
+    cd C:/LearningCpp/MakeAndCmake/GitSubModuleExample/build/Release
+    .\testsub.exe
     

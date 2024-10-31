@@ -1,4 +1,6 @@
 #include "GLFW/glfw3.h"
+#include <cstdio>
+#include <cstdlib> 
 
 int main ()
 {
