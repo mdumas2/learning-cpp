@@ -1,0 +1,3 @@
+#define Versioning_VERSION_MAJOR @Versioning_VERSION_MAJOR@
+#define Versioning_VERSION_MINOR @Versioning_VERSION_MINOR@
+#define Versioning_VERSION_PATCH @Versioning_VERSION_PATCH@
