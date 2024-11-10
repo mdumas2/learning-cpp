@@ -1,5 +1,9 @@
 # Make and CMake
 
+[Reproducible Developer Environments in C++](https://www.youtube.com/watch?v=9GKGp3zeOOc)
+
+[Writing a Base Level Library for Safety Critical Code in C++](https://www.youtube.com/watch?v=4drNqBEQdsg)
+
 A Makefile is a file used by the make build automation tool to control the build process for projects, typically in C, C++, or other programming languages. It contains rules and instructions on how to compile and link a program, specifying the dependencies between files and the commands needed to produce executable output.
 
 CMake is a tool that generates build files, such as Makefiles, for different platforms and build systems. CMake helps manage the build process for complex software projects in a more portable and cross-platform way by abstracting the underlying build system.
