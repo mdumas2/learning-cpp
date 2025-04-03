@@ -1,4 +1,22 @@
-# Data Structure and Algorithms
+# Data Structures
+
+[Vectors and Arrays](./ArraysAndVectors/README.md)
+
+[Linked Lists]()
+
+[Stacks and Queues]()
+
+[Hash Tables]()
+
+[Trees, Tries and Graphs]()
+
+[Heaps]()
+
+# Data Structure and Algorithms Universities Content
+
+[Princeton University - Algoritmos, Parte II](https://www.coursera.org/learn/algorithms-part2)
+
+[University of Colorado Boulder - Algoritmos de aproximação e programação linear](https://www.coursera.org/learn/linear-programming-and-approximation-algorithms)
 
 [UFF](https://igormcoelho.github.io/curso-estruturas-de-dados-i/)
 
