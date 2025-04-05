@@ -110,3 +110,24 @@ const std::vector<int>& func() {
 
 ## Conclusion
 This cheat sheet provides an overview of arrays in C++, covering different implementations, best practices, and security considerations. Understanding these concepts helps in writing efficient and safe C++ code.
+
+---------------------------
+template<typename T>
+typename std::enable_if<
+    std::is_same<decltype(std::declval<T>() + std::declval<T>()), T>::value,
+    T
+>::type
+count(T a, T b) {
+    return a + b;
+}
+#include <concepts>
+
+template<typename T>
+concept Addable = requires(T a, T b) {
+    { a + b } -> std::same_as<T>;
+};
+
+template<Addable T>
+T count(T a, T b) {
+    return a + b;
+}
